@@ -27,11 +27,21 @@
   to { transform: rotate(360deg); }
 }*/
 
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+body{
+  /*background-image: image(./thackery.jpg);*/
+  background-color: black;
+}
 
 .App{
-  background-color: grey;
-  height: auto;
+
+  width: 100%;
+  height: 1000px;
+  /*background-image: url(./Thackery.jpg);*/
+  /*background-color: black;*/
+  color: white;
+
 }
 
 .Header{
@@ -41,55 +51,466 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Skills{
   width: 100%;
   height: 16.66%;
-  background-color: orange;
+  /*background-color: orange;*/
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Projects{
   width: 100%;
   height: 16.66%;
-  background-color: yellow;
+  /*background-color: yellow;*/
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .About{
   width: 100%;
   height: 16.66%;
-  background-color: green;
+  /*background-color: green;*/
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Contact{
   width: 100%;
   height: 16.66%;
-  background-color: blue;
+  /*background-color: blue;*/
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Footer{
   width: 100%;
   height: 16.66%;
-  background-color: purple;
+  /*background-color: purple;*/
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
+
+.blurred-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+.Backgroundtop {
+  display: flex;
+  background-image: url(./Tenred.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  z-index: -2;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.photo {
+  height: 160px;
+  width: 125px;
+  border-radius: 50%;
+  border: solid 3px black;
+
+
+}
+
+.text-box {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.photo-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+.skills-box {
+  color: #f2f2f2;
+  font-size: 32px;
+  text-align: center;
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.summary-box h1 {
+  font-size: 32px;
+}
+
+.summary-box {
+  color: #f2f2f2;
+  font-size: 16px;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.left, .middle, .right, .left1, .middle1, .right1 {
+  display: flex;
+  height: 250px;
+  text-align: center;
+  color: #f2f2f2;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+  justify-content: center;
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.left {
+  background-color: white;
+  font-weight: bold;
+  font-size: 58px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.left:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+}
+
+.blog:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+}
+
+.blog {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.middle {
+  justify-content: center;
+}
+
+.typewriter {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.typewriter:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+}
+
+.row-2, .row-3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.travel {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.travel:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+}
+
+.nasa {
+  width: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.nasa:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+}
+
+.middle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoodgoods {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.hoodgoods:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+}
+
+.right1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.flexbox:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+}
+
+.dice {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.dice:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+}
+
+.blueskies {
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.blueskies:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 50%;
+}
+
+.right2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.right2 a {
+  margin-top: 10px;
+  color: white;
+}
+
+.animation {
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+}
+
+.animation a {
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.animation:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.fb {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.linkedin {}
+
+.social-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.fbimage, .linkedinimage {
+  max-height: 100%;
+  transition: all 1s ease-in-out;
+  border: 8px solid #000000;
+  border-radius: 15px;
+}
+
+.fbimage:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 25px;
+}
+
+.linkedinimage:hover {
+  transform: scale(.9);
+  transition: all 1s ease-in-out;
+  border: 8px solid #97040C;
+  border-radius: 15px;
+}
+
+.register-box{
+  box-sizing: border-box;
+  height: 650px;
+  /*width: 700px;*/
+  border: 8px solid #97040C;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 50px;
+  /*display: flex;*/
+  color:white;
+  /*justify-content: center;*/
+
+}
+.black-font{
+  color:black;
+}
+.register{
+  display: flex;
+  justify-content: center;
+}
+input,
+label{
+  width: 90%;
+  margin:5px;
+  border-radius: 5px;
+}
+/*.radio-contact input{
+  width: 13%;
+
+}*/
+
+.contact-buttons{
+
+  display: flex;
+  justify-content: center;
+  /*width:90%;*/
+
+}
+.radio-contact input{
+  width: 13%;
+}
+.radio-contact{
+
+
+  width:50%;
+  margin: 0 auto;
+
+}
+
+.submit-col{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.submit{
+  width: 80%;
+  background-color: #97040C;
+  color: white;
+  border-radius: 15px;
+}
+@media (min-width: 700px){
+  .radio-contact input{
+    width: 13%;
+    .register-box{
+      width: 700px;
+    }
+  }
+  .radio-contact{
+    width: 100%;
+  }
+  .radio-contact input{
+    width: 25px;
+  }
+
+  .contact-buttons{
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-around;*/
+
+
+  }
+}
+
+/*<div className="Header">
+<h1>Header</h1>
+</div>*/
+
+/*<div className="Skills">
+<h1>Skills</h1>
+</div>
+<div className="Projects">
+<h1>Projects</h1>
+</div>
+
+
+<div className="About">
+<h1>About</h1>
+</div>
+
+
+<div className="Contact">
+<h1>Contact</h1>
+</div>
+
+
+<div className="Footer">
+<h1>Footer</h1>
+</div>*/
