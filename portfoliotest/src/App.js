@@ -15,9 +15,34 @@ import dice from './dice.jpg';
 import bluesky from './bluesky.jpg';
 import fb from './fb.png';
 import linkedin from './linkedin.png';
+import Form from './Components/Form';
 // import './assets/css/fonts.css';
 
+const api_call = 'https://talaikis.com/api/quotes/random/';
+
 class App extends Component {
+  state={
+    quote:{
+      content:'',
+      link: '',
+      title:''
+    }
+  }
+getQuote = async (e) => {
+  e.preventDefault();
+  fetch(api_call)
+  .then(response => response.json())
+  .then(data => {
+    // console.log(data)
+    this.setState({quote:{...this.state.quote,content:data.quote}});
+
+  })
+
+
+
+}
+
+
 
 
   render() {
@@ -77,6 +102,7 @@ class App extends Component {
 
 
 
+
       <div className="container-fluid">
 
       <div className="row row-2">
@@ -101,11 +127,11 @@ class App extends Component {
 
 
       <div className="row row-3">
+
               <div className="col-xs-12 col-md-4 left1">
                 <div className="cv">
                   <a href="https://toddfrederking.github.io/web-workbook/03week/airplane/" target="_blank"><img className="travel"  src={travel}/></a>
                 </div>
-
               </div>
 
               <div className="col-xs-12 col-md-4 middle1">
@@ -114,54 +140,56 @@ class App extends Component {
               <div className="col-xs-12 col-md-4 right1">
                 <a href="https://toddfrederking.github.io/checkpoint1/index.html" target="_blank"><img className="hoodgoods" src={hoodgoods} /></a>
               </div>
-            </div>
-
-
-
-            <div className="row row-4">
-        <div className="col-xs-12 col-md-4 left1">
-          <div className="cv">
-            <a href="https://toddfrederking.github.io/web-workbook/04week/welcome-to-our-site//" target="_blank"><img className="flexbox"  src={flexbox}/></a>
-          </div>
-
         </div>
+
+
+
+        <div className="row row-4">
+          <div className="col-xs-12 col-md-4 left1">
+            <div className="cv">
+              <a href="https://toddfrederking.github.io/web-workbook/04week/welcome-to-our-site//" target="_blank"><img className="flexbox"  src={flexbox}/></a>
+            </div>
+          </div>
 
         <div className="col-xs-12 col-md-4 middle1">
-          <a href="https://toddfrederking.github.io/web-workbook/06week/dice/index.html" target="_blank"><img className="dice" src={dice} /></a>
+            <a href="https://toddfrederking.github.io/web-workbook/06week/dice/index.html" target="_blank"><img className="dice" src={dice} /></a>
         </div>
+
         <div className="col-xs-12 col-md-4 right2">
-          <a href="https://toddfrederking.github.io/web-workbook/05week/transitions-and-transformations/" target="_blank"><img className="blueskies" src={bluesky} /></a>
-          <div className="animation">
-
-
-            <a href="https://toddfrederking.github.io/web-workbook/05week/transitions-and-transformations/" target="_blank">
+            <a href="https://toddfrederking.github.io/web-workbook/05week/transitions-and-transformations/" target="_blank"><img className="blueskies" src={bluesky} /></a>
+        <div className="animation">
+          <a href="https://toddfrederking.github.io/web-workbook/05week/transitions-and-transformations/" target="_blank">
             Animation
           </a>
-          </div>
+        </div>
         </div>
       </div>
 
 
 
 
-      <div className="row socials">
+    <div className="row socials">
         <div className="col-12 social-text">
           <h1>The Socials</h1>
         </div>
+
         <div className="col-xs-6 fb">
           <a href="https://www.facebook.com/todd.frederking" target="_blank">
           <img className="fbimage" src={fb} /></a>
         </div>
+
         <div className="col-xs-6 linkedin">
           <a href="https://www.linkedin.com/in/toddfrederking/" target="_blank">
           <img className="linkedinimage" src={linkedin} /></a>
         </div>
 
+    </div>
+      <div>
+
+        <Form getQuote= {this.getQuote} quote={this.state.quote.content} />
       </div>
-
-        </div>
-
-
+  </div>
+</div>
 
 
 
@@ -173,11 +201,8 @@ class App extends Component {
 
 
 
-      </div>
     );
   }
 }
 
 export default App;
-
-// backgroundImage: "url(" + { Thackery } + ")"
