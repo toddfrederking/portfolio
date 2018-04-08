@@ -1,31 +1,4 @@
-/*.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
 
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 
@@ -385,7 +358,7 @@ body{
   font-family: 'Orbitron', sans-serif;
 }
 
-.fbimage, .linkedinimage {
+.fbimage, .linkedinimage, .quotebutton {
   max-height: 100%;
   transition: all 1s ease-in-out;
   border: 8px solid #000000;
@@ -404,6 +377,38 @@ body{
   transition: all 1s ease-in-out;
   border: 8px solid #97040C;
   border-radius: 15px;
+}
+
+.QuoteBox{
+  display:flex;
+  justify-content: center;
+}
+
+.quotebutton{
+  border: 8px solid #97040C;
+  border-radius: 15px;
+  background-color: black;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.putQuoteHere{
+  height: 80px;
+  width: 80%;
+  border: 4px solid #97040C;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteWrapper{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 10px;
 }
 
 .register-box{
